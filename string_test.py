@@ -19,3 +19,15 @@ print(len('aaaaaaaaaaaA')) # doesn't work on Ruby
 
 # To substitute
 print('Hello World'.replace('orld','Python'))
+
+#특수문자 escape
+print('I Will \"BE\" Back') # Result: I Will "BE" Back - in Python '' == ""
+print("I Will \"BE\" Back") # Result: I Will "BE" Back
+print('\\')
+
+#줄바꿈 New Line \n / Tab \t
+print("Hello Enter\nWorld")
+print("Hello Tab\t\tWorld")
+
+#Alert sound \a - 컴퓨터의 기본 경고음
+print("\a")
