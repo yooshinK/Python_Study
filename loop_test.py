@@ -1,6 +1,6 @@
 i = 0
 while i<3: #True, False
-    print('HELLO')
+    print('HELLO Python')
     print('Hello '+str(i))
     i += 1
     print('Hello '+str(i))
