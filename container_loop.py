@@ -23,3 +23,13 @@ for member in members2: # member is automatically set as 0
     print(member+" "+ str(j))
     j += 1
     pass
+
+print("-----------------------------")
+# for
+for item in range(5): # == [0,1,2,3,4,5]
+    print(str(item)+" T")
+
+print("-----------------------------")
+# for
+for item in range(5,10): # == [5,6,7,8,9]
+    print(str(item)+" T2")
