@@ -1,2 +1,2 @@
-def a():
-    return 'from test2'
+def test():
+    return 'module from test2'
