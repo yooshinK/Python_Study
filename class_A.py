@@ -4,7 +4,7 @@ class Cal(object):
         self.a = a
         self.b = b
     def add(self):
-        return self.a+self.b # self. are instance variables
+        return self.a+self.b # self. are instance variables. could be other letters
     def subtract(self):
         return self.a-self.b
 
