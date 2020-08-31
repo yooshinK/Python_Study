@@ -20,7 +20,7 @@ print("---------------------------------")
 
 class Class3(Class1): #Python's Inheritance Parent:Class1
     def method2(self): return 'Inheritance Test Class3 Method2'
-    # def method1(self): return 'Inheritance Test Class3 Method1'
+    # def method1(self): return 'Inheritance Test Class3 Method1' -> can be updated 
 
 c3 = Class3()
 print(c3, c3.method1())
