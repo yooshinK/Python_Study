@@ -4,7 +4,7 @@ class Class_Variable_Test(object):
         Class_Variable_Test.count += 1 # When you access class variables in a method
     @classmethod
     def getCount(cls):
-        print(cls) #
+        print(cls) # can be any name such as TESTTEST
         return cls.count
 
 i1 = Class_Variable_Test()
