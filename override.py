@@ -4,7 +4,7 @@ class Family:
 
 class K_Family(Family):
     def me(self):
-        super().me()
+        super().me()  # call parent class's me()
         return super().me() + ' and ' + 'I am Child'
 
 test = K_Family()
