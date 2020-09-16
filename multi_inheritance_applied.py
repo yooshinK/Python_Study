@@ -23,3 +23,5 @@ c = Cal(100, 10)
 print(c.add())
 print(c.multiply())
 print(c.divide())
+
+#Test
