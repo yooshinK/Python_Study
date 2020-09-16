@@ -19,3 +19,5 @@ c.c1_m()
 c.c2_m()
 c.m()
 print(C3.__mro__)
+
+#Test
