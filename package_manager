@@ -53,7 +53,25 @@ r = requests.get('http://yooshink.com/magazine_amang_travelessay.html')
 print(r.text)
 print("------------------------------------------------")
 soup = BeautifulSoup(r.text, 'html.parser')
-print('Title is '+soup.title)
-print('Title is '+soup.body.string)
+print(soup.title) # -> <title>Magazine - AMANG Korea</title>
+print("------------------------------------------------")
+print('Title is '+soup.title.string) # -> Title is Magazine - AMANG Korea
+print("------------------------------------------------")
+print(soup.title.name) # -> 'title'
+print("------------------------------------------------")
+print(soup.title.parent.name) # -> 'head'
+print("------------------------------------------------")
+print(soup.li) # 첫번재 li 태그만 출력 <li>2019.10. -<a href="./Amang Magazine/magazine file/amang_travel_2019_11.jpg" target="_blank">~~~~~</a></li>
+print("------------------------------------------------")
+print(soup.findAll("div",{"class":"magazine_page"})) # div태그에서 class명이 magazine_page인 녀석들만 출력
+print("------------------------------------------------")
+# soup.p['class']
+# # u'title'
+#
+# soup.a
+# # <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+
+print(soup.find_all('a')) # 그 페이지에 있는 모든 a 태그 출력
+
 
 
