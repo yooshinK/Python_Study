@@ -40,9 +40,20 @@ print('Article : '+articles[0].text)
 
 Study)
 import requests
+# When you are trying to crwaling codes using Python's bs4 and requests, you might get this error message caused by Encoding Korean etc.
+# error -> UnicodeEncodeError: 'cp949' codec can't encode character '\xec' in position 1565: illegal multibyte sequence
+# if you see this message, you can fix it with the 4 lines below to change encoding
+import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(),encoding = 'utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(),encoding = 'utf-8')
+
 from bs4 import BeautifulSoup
-r = requests.get("http://yooshink.com/index.html")
-# print(r.text)
+r = requests.get('http://yooshink.com/magazine_amang_travelessay.html')
+print(r.text)
+print("------------------------------------------------")
 soup = BeautifulSoup(r.text, 'html.parser')
 print('Title is '+soup.title)
+print('Title is '+soup.body.string)
+
 
