@@ -23,9 +23,9 @@ def sum_for(n):
 def sum_Gauss(n):
     s = 0
     if n > 0:
-        s = n*(n+1)/2
+        s = n*(n+1)//2 # in Python '//' double slash means integer divide
     elif n < 0:
-        s = (n*(n-1)/2)*-1
+        s = (n*(n-1)/2)*-1 # one slash will show ~.0
     else:
         return 0
     return s
@@ -47,14 +47,14 @@ print("------Just Factorial--------")
 print("Factorial value is "+math.factorial(5).__str__())
 
 # # Resutl
-# ------sum recursive--------
+# ------sum factorial--------
 # Sum = 55
 # Sum = -55
 # ------sum for--------
 # Sum = 55
 # Sum = -55
 # ------sum Gauss--------
-# Sum = 55.0
+# Sum = 55
 # Sum = -55.0
 # ------Just Factorial--------
 # Factorial value is 120
