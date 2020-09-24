@@ -20,6 +20,16 @@ def sum_for(n):
         return 0
     return s
 #-------------------------------------
+def sum_Gauss(n):
+    s = 0
+    if n > 0:
+        s = n*(n+1)/2
+    elif n < 0:
+        s = (n*(n-1)/2)*-1
+    else:
+        return 0
+    return s
+#-------------------------------------
 
 print("------sum factorial--------")
 print("Sum = "+sum_factorial(10).__str__())
@@ -29,8 +39,22 @@ print("------sum for--------")
 print("Sum = "+sum_for(10).__str__())
 print("Sum = "+sum_for(-10).__str__())
 
+print("------sum Gauss--------")
+print("Sum = "+sum_Gauss(10).__str__())
+print("Sum = "+sum_Gauss(-10).__str__())
+
+print("------Just Factorial--------")
 print("Factorial value is "+math.factorial(5).__str__())
+
 # # Resutl
-# Sum value is 5050
-# Sum value is -5050
+# ------sum factorial--------
+# Sum = 55
+# Sum = -55
+# ------sum for--------
+# Sum = 55
+# Sum = -55
+# ------sum Gauss--------
+# Sum = 55.0
+# Sum = -55.0
+# ------Just Factorial--------
 # Factorial value is 120
