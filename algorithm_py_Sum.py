@@ -1,10 +1,10 @@
 import math
 #-------------------------------------
-def sum_factorial(n):
+def sum_recursive(n):
     if n > 0:
-        return n+sum_factorial(n-1)
+        return n+sum_recursive(n-1)
     elif n < 0:
-        return n+sum_factorial(n+1)
+        return n+sum_recursive(n+1)
     else:
         return 0
 #-------------------------------------
@@ -31,9 +31,9 @@ def sum_Gauss(n):
     return s
 #-------------------------------------
 
-print("------sum factorial--------")
-print("Sum = "+sum_factorial(10).__str__())
-print("Sum = "+sum_factorial(-10).__str__())
+print("------sum recursive--------")
+print("Sum = "+sum_recursive(10).__str__())
+print("Sum = "+sum_recursive(-10).__str__())
 
 print("------sum for--------")
 print("Sum = "+sum_for(10).__str__())
@@ -47,7 +47,7 @@ print("------Just Factorial--------")
 print("Factorial value is "+math.factorial(5).__str__())
 
 # # Resutl
-# ------sum factorial--------
+# ------sum recursive--------
 # Sum = 55
 # Sum = -55
 # ------sum for--------
