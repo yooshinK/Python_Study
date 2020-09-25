@@ -44,7 +44,7 @@ print("Sum = "+sum_Gauss(10).__str__())
 print("Sum = "+sum_Gauss(-10).__str__())
 
 print("------Just Factorial--------")
-print("Factorial value is "+math.factorial(5).__str__())
+print("Just Factorial "+math.factorial(5).__str__())
 
 # # Resutl
 # ------sum factorial--------
@@ -57,4 +57,4 @@ print("Factorial value is "+math.factorial(5).__str__())
 # Sum = 55
 # Sum = -55.0
 # ------Just Factorial--------
-# Factorial value is 120
+# Just Factorial 120
