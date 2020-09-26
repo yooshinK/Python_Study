@@ -36,11 +36,20 @@ print("Sum = "+square_sum_recursive(10).__str__())
 print("Sum = "+square_sum_recursive(-10).__str__())
 
 print("------sum for--------")
-print("Sum = "+square_sum_for(10).__str__())
+print("Sum = "+square_sum_for(100).__str__())
 print("Sum = "+square_sum_for(-10).__str__())
 
 print("------square sum --------")
 print("Sum = "+square_sum(10).__str__())
-print("Sum = "+square_sum(-10).__str__())
+print("Sum = "+square_sum(-100).__str__())
 
 # # Resutl
+# ------sum recursive--------
+# Sum = 385
+# Sum = 385
+# ------sum for--------
+# Sum = 338350
+# Sum = 385
+# ------square sum --------
+# Sum = 385
+# Sum = 338350
