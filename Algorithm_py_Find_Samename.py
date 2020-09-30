@@ -1,25 +1,29 @@
-import math
+import sys
 #-------------------------------------
-num_list = [17,92,18,33,58,70,330,420]
+name_list = ["keroro","kiroro","dororo","tamama","kiroro","kururu"]
 #-------------------------------------
-def find_max_num_for(array_values):
-    n = len(array_values)
+def find_Samename(array_values):
+    name_set = set()
+    name_set.add("test")
+    length = len(array_values)
     s = array_values[0]
-    max_idx = 0
-    for i in range(1, n):
-        if s <= array_values[i]:
+    count = 0
+    for i in range(0, length-1):
+        if s == array_values[i+1]:
+            name_set.add(s)
+            count += 1
+            print(s)
             s = array_values[i]
-            max_idx = i
-    print("Max Id is " + max_idx.__str__())
-    return s, max_idx
+
+    # print("Max Id is " + max_idx.__str__())
+    return name_set
         # else:
         #     pass
 
-print("------Find Max Num - For--------")
-print(find_max_num_for(num_list))
+print("------Find Same Name - For--------")
+print("Same name set", end =" ") # on the same line printing
+# sys.stdout.write("TEST") # on the same line printing
+print(find_Samename(name_list))
 #-------------------------------------
 
 # # Result
-# ------Find Max Num - For--------
-# Max Id is 7
-# (420, 7)
