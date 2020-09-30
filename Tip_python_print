@@ -1,0 +1,8 @@
+Python: How to Print Without Newline?
+
+1. Using "end" Argument in the print statement (Python 3.X)
+print("Same name set", end =" ") # on the same line printing
+
+2. Import "sys" Library (Python 3.X)
+import sys
+sys.stdout.write("Hey! Welcome to the STechies.") # on the same line printing
