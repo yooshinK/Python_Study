@@ -19,8 +19,33 @@ def Paring_two_friends(array_values):
 
 print("------Paring Two Friends - For--------")
 Paring_two_friends(name_list)
-print(count)
-
+print(count, end =" = ")
+# print("Same name set", end =" ")
+print(len(name_list)*(len(name_list)-1)//2) # n(n-1)/2 Combination
 #-------------------------------------
 
 # # # Result
+# ------Paring Two Friends - For--------
+# Total 6 Friends
+# ------Paring Two Friends - For--------
+# keroro - kiroro1
+# keroro - dororo
+# keroro - tamama
+# keroro - kiroro2
+# keroro - kururu
+# -------FOR 1--------
+# kiroro1 - dororo
+# kiroro1 - tamama
+# kiroro1 - kiroro2
+# kiroro1 - kururu
+# -------FOR 1--------
+# dororo - tamama
+# dororo - kiroro2
+# dororo - kururu
+# -------FOR 1--------
+# tamama - kiroro2
+# tamama - kururu
+# -------FOR 1--------
+# kiroro2 - kururu
+# -------FOR 1--------
+# 15 = 15
