@@ -1,28 +1,36 @@
 import math
 #-------------------------------------
 def find_GCF(v1,v2):
+    print(v1, v2)
     if v1 == v2:
         return v1
-        
-    elif v1 < v2:
-        i = v1
-        for i in range(i, 1):
-            if (v2 / i) == 0:
-                return i
-            else:
-                i -= 1
-    else:
-        i = v2
-        for i in range(i, 1):
-            if (v1 / i) == 0:
-                return i
-            else:
-                i -= 1
-#-------------------------------------
-num1 = int(input("Enter the first num"))
-num2 = int(input("Enter the second num"))
 
-print('The Greatest Common Factor is')
-find_GCF(num1, num2)
+    elif v1 < v2:
+        s = v1
+        while s > 1:
+            if (v2 // s) == 0:
+                return s
+            else:
+                s -= 1
+        #
+        # for i in range(1, s):
+        #     print(i)
+        #     if (v2 / s) == 0:
+        #         return i
+        #     else:
+        #         i -= 1
+    else:
+        s = v2
+        while s > 1:
+            if (v1 // s) == 0:
+                return s
+            else:
+                s -= 1
+#-------------------------------------
+num1 = int(input("Enter the first num - "))
+num2 = int(input("Enter the second num - "))
+
+print("The Greatest Common Factor is", end =" ")
+print(find_GCF(num1, num2))
 #-------------------------------------
 # # Resutl
