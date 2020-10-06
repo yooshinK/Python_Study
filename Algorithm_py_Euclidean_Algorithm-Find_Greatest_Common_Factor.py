@@ -6,7 +6,7 @@ def Euclidean_algorithm(v1,v2):
     if min_idx == 0:
         return max_idx
     elif min_idx != 0:
-        Euclidean_algorithm(min_idx ,max_idx % min_idx)
+        return Euclidean_algorithm(min_idx ,max_idx % min_idx)
 #-------------------------------------
 
 #-------------------------------------
@@ -16,4 +16,3 @@ num2 = int(input("Enter the second num - "))
 print("The Greatest Common Factor - Euclidean Algorithm", end =" - ")
 print(Euclidean_algorithm(num1, num2))
 #-------------------------------------
-# # Resutl
