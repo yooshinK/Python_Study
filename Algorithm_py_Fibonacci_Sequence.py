@@ -10,18 +10,19 @@ def Fibonacci_Sequence_for(b):
     return num_list
 #-------------------------------------
 #-------------------------------------
-def Fibonacci_Sequence_recursive(array_values,b):
-    print("Fibonacci Sequence - Resucrtive", a, b)
-    s = array_values
-    if b == 0:
-        return 0
-    elif b > 0:
-        s = s + Fibonacci_Sequence(Fibonacci_Sequence(a,b)*s+1, b-1)
-    return s
+def Fibonacci_Sequence_recursive1(v1,v2,index):
+    print("Fibonacci Sequence - Resucrtive 1st - ", v1, v2, index)
+    v3 = v1+v2
+    while index > 2:
+        index -= 1
+        return Fibonacci_Sequence_recursive1(v2, v3, index)
+    return v3
 #-------------------------------------
 # num = int(input("Enter a number - "))
-num = 11
-print("Fibonacci Sequence for ", num)
+num = 3
+print("Fibonacci Sequence For ", num)
 print(Fibonacci_Sequence_for(num))
+print("Fibonacci Sequence Recursive 1st - ", num)
+print(Fibonacci_Sequence_recursive1(0,1,num))
 #-------------------------------------
 # Result:
