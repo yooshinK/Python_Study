@@ -43,7 +43,7 @@ print("------square sum --------")
 print("Sum = "+square_sum(10).__str__())
 print("Sum = "+square_sum(-100).__str__())
 
-# # Resutl
+# # Result
 # ------sum recursive--------
 # Sum = 385
 # Sum = 385
