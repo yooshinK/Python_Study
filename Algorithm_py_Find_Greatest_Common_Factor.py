@@ -33,4 +33,4 @@ num2 = int(input("Enter the second num - "))
 print("The Greatest Common Factor is", end =" ")
 print(find_GCF2(num1, num2))
 #-------------------------------------
-# # Resutl
+# # Result
