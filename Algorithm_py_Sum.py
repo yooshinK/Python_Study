@@ -46,7 +46,7 @@ print("Sum = "+sum_Gauss(-10).__str__())
 print("------Just Factorial--------")
 print("Just Factorial "+math.factorial(5).__str__())
 
-# # Resutl
+# # Result
 # ------sum factorial--------
 # Sum = 55
 # Sum = -55
