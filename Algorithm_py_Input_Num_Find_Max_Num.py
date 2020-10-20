@@ -20,4 +20,4 @@ for i in range(0,num):
 find_max_num_for(num_list)
 print('ARRAY: ', num_list)
 #-------------------------------------
-# # Resutl
+# # Result
