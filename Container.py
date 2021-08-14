@@ -5,8 +5,8 @@ print(name)
 
 # Result = <class 'list'>
 print("Names - ")
-names = ['yooshin','TEST',"Noah"]
-print(type(['yooshin','TEST',"Noah"]))
+names = ['yooshin','TEST',"TEST2"]
+print(type(['yooshin','TEST',"TEST2"]))
 print(type(names))
 print(names)
 print(names[0])
